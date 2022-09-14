@@ -1,0 +1,10 @@
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+#code {
+    font-family: "consolas";
+    margin: 0;
+    color: #CCCCCC;
+}

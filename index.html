@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/images/svg/icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">MOTZ Martin, dev.</div>
+    <div id="menu">
+        <div onclick="change(0)">Accueil</div>
+        <div onclick="change(1)">Mes compétences</div>
+        <div onclick="change(2)">Mes projets (JS)</div>
+        <div onclick="change(3)">Me contacter</div>
+    </div>
+    <div id="content" style="margin: 20px;">
+        <div class="section">
+            <div class="paragraph">
+                <u style="font-size: 20px;">Mon Parcours</u>
+            </div>
+            <div class="paragraph">
+                Je m'appelle Martin MOTZ et je compte de devenir développeur. Je suis passionné
+                d'informatique et je pratique la programmation depuis plus de 4 ans.
+                J'ai commencé durant mes années collèges avec mon ami <i>Emmanuel TUDELA</i>,
+                alias Akane.
+                <u class="clickable" onclick="window.open('https://emmanueltudela.netlify.app/')">
+                    (son site web)</u>
+                Mes débuts consistaient à créer des pages HTML/CSS, qui aujourd'hui
+                seraient très laides. (il faut bien commencer quelque part :D)
+            </div>
+            <div class="paragraph">
+                J'ai petit à petit appris le JavaScript
+                avec l'aide de <i>Florent Marrens</i>.
+                <u class="clickable" onclick="window.open('http://oneweb.fr/')">
+                    (son site web)</u>
+                Étant curieux, je me suis aussi tourné vers d'autres langages, comme le C++,
+                mais pour moi le JavaScript reste le numéro 1. Avec mes 4 années d'expérience
+                en JavaScript, je me suis orienté vers de la programmation serveur (en Node JS).
+            </div>
+            <div class="paragraph">
+                Je me suis aussi pas mal intéressé aux algorithmes en tous genres, Python
+                est à mon sens un excellent langage pour commencer à toucher à ça. À l'heure
+                d'aujourd'hui, je suis en 1ère spé Maths/Si/Nsi, 3 matières qui m'aident à
+                développer mes connaissances en programmation ainsi que ma logique.
+            </div>
+        </div>
+        <div class="section">
+            <div class="flex two">
+                <div>
+                    <div class="paragraph">
+                        <u style="font-size: 20px;">Front-end</u>
+                    </div>
+                    <div class="paragraph">
+                        Je me qualifierai d'amateur avec le front-end, le HTML5 et le CSS3 sont eux
+                        deux des langages assez complexes à maitriser. Pour progresser il faut pratiquer,
+                        et c'est ce que je fais.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <u style="font-size: 20px;">Back-end</u>
+                    </div>
+                    <div class="paragraph">
+                        Mon domaine de prédilection : le back-end. Je programme très souvent
+                        en back-end (voir même tout le temps), uniquement en Node JS. C'est une
+                        plateforme qui prend de l'ampleur sur le web.
+                    </div>
+                </div>
+            </div>
+            <div class="paragraph">
+                <u style="font-size: 20px;">Langages</u>
+            </div>
+            <div class="flex tree">
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/svg/python.svg">
+                        <u>Python</u>
+                        <br>
+                        8/10 - Je pratique régulièrement le Python depuis la seconde, avec ce langage
+                        je touche au big data, et aux algorithmes de tri performants.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/svg/cpp.svg">
+                        <u>C/C++</u>
+                        <br>
+                        9/10 - Le C et le C++ sont des langages que j'ai énormement pratiqué, avec leur
+                        gestion avancée de la mémoire, ils permettent de mieux comprendre comment nos ordinateurs
+                        fonctionnent.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/svg/html5.svg"><img src="assets/images/svg/css3.svg">
+                        <u>HTML5 / CSS3</u>
+                        <br>
+                        7/10 - Je suis pas super doué en front-end, mais j'apprends petit
+                        à petit, notamment en ayant créé ce site.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/svg/javascript.svg" style="border-radius: 50%;">
+                        <u>JavaScript</u>
+                        <br>
+                        9/10 - Le JavaScript est l'un des langage que j'ai le plus pratiqué, depuis très
+                        tôt. Je ne compte plus les projets que je créé avec.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/svg/nodejs.svg">
+                        <u>Node JS</u>
+                        <br>
+                        9/10 - Comme il utilise le moteur JavaScript, je suis très à l'aise
+                        avec cette plateforme. Notamment avec les websockets.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="flex tree projects">
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/png/islands_generator.png"
+                            onclick="window.open('projects/islands%20generator/index.html')">
+                        <u>Islands Generator</u>
+                        <br>
+                        Après de nombreuses versions, Islands Generator est l'un de mes meilleurs
+                        projets, j'ai bataillé pour tenter de créer moi même un système de noise
+                        (bruit), et j'ai enfin réussi.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/png/flappy_bird.png"
+                            onclick="window.open('projects/flappy%20bird/index.html')">
+                        <u>Flappy Bird</u>
+                        <br>
+                        C'est un classique, que ce soit en programmation ou bien en tant
+                        que jeu mobile. Les tuyaux avancent de plus en plus vite au fur et à mesure
+                        que vous progressez dans le jeu. Bonne chance !
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/png/constellation.png"
+                            onclick="window.open('projects/constellation/index.html')">
+                        <u>Constellation</u>
+                        <br>
+                        C'est un projet tout bête, mais beau visuellement. Des points sont générés
+                        aléatoirement dans le canvas, et se déplacent avec un coefficient lui aussi aléatoire.
+                        Et quand ils sont à moins de 150 pixels les uns des autres, ils se relient.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/png/aim_training.png"
+                            onclick="window.open('projects/aim%20training/index.html')">
+                        <u>Aim Training</u>
+                        <br>
+                        J'ai été inspiré par le site <u
+                            onclick="window.open('http://www.donttap.com/')">www.donttap.com</u>
+                        (mais le miens est mieux :p), qui est un bon entraîneur pour l'aim (la précision).
+                        Vous avez 30 secondes pour cliquer sur le maximum de cases noires !
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/png/crypteur_de_donnees.png"
+                            onclick="window.open('projects/crypteur%20de%20donnees/index.html')">
+                        <u>Crypteur de Données</u>
+                        <br>
+                        Voici un magnifique crypteur de données, comme son nom l'indique. Il permet
+                        de crypter tout type de message, avec une clé en héxadécimal. Vous pouvez
+                        en générer une ou vous même la créer.
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/png/jump.png" onclick="window.open('projects/jump/index.html')">
+                        <u>Jump</u>
+                        <br>
+                        Un petit jeu de plates-formes avec aucun objectif, juste de sauter
+                        d'obstacle en obstacle. Utilisez Q, D, et espace pour vous déplacer,
+                        amusez vous bien sur ce super jeu !
+                    </div>
+                </div>
+                <div>
+                    <div class="paragraph">
+                        <img src="assets/images/png/mouse_follower.png"
+                            onclick="window.open('projects/mouse%20follower/index.html')">
+                        <u>Mouse Follower</u>
+                        <br>
+                        Ce petit visage mignon va suivre votre souris du regard ! J'ai essayé
+                        avec ce projet de faire de la 3D, c'est à 100% une histoire de
+                        coordonnées. Je suis plutôt content du résultat.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="paragraph">
+                <img class="icons" src="assets/images/svg/github.svg"><br>
+                <u class="clickable" onclick="window.open('https://github.com/motzmartin')">
+                    https://github.com/motzmartin</u>
+            </div>
+            <div class="paragraph">
+                <img class="icons" src="assets/images/svg/discord.svg"><br>
+                keidowdow#9191
+            </div>
+            <div class="paragraph">
+                <img class="icons" src="assets/images/svg/instagram.svg"><br>
+                @mtzm4rtin
+            </div>
+            <div class="paragraph">
+                <img class="icons" src="assets/images/svg/gmail.svg"><br>
+                martinmotzcontact@gmail.com
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

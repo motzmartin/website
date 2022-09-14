@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css">
+    <title>privy</title>
+</head>
+
+<body style="background-color: #282C34;">
+    <pre><code class="javascript"></code></pre>
+    <script src="script.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+        let arr = text.toString().split("\n")
+        arr = arr.slice(1, arr.length - 2)
+        for (let i = 0; i < arr.length; i++) arr[i] = arr[i].slice(4, arr[i].length)
+        document.querySelector("code").innerHTML = arr.join("\n")
+    </script>
+</body>
+
+</html>

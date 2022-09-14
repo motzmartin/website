@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>crypteur</title>
+</head>
+
+<body>
+    <div id="window">
+        <div id="bar">
+            <div id="title">Crypter/décrypter votre message</div>
+        </div>
+        <div id="content">
+            <input id="text" oninput="sort(1)" placeholder="Message à crypter/décrypter" spellcheck="false">
+            <input id="key" oninput="sort(0)" placeholder="Clé en hexadécimale" spellcheck="false">
+            <div class="button" id="encrypt" onclick="crypt(1)">Encrypter</div>
+            <div class="button" id="decrypt" onclick="crypt(0)">Decrypter</div>
+            <div class="button" id="rand_key" onclick="randKey()">Clé aléat.</div>
+            <div id="computer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
